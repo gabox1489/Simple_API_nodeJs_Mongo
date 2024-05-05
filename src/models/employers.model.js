@@ -15,7 +15,8 @@ const employerSchema = mongoose.Schema({
     },
     social_id:{
         required:true,
-        type:Number
+        type:Number,
+        unique: true
     },
     publication_date:{
         type: String
